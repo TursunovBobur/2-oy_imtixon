@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  // scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: DM Serif Display, Public sans;
+  margin: 0;
+  padding: 0;
+  background-color: #edf3f8;
+  background-image: url('../images/photo-removebg-preview.png');
+  background-size: 780px;
+  background-repeat: no-repeat;
+  background-position: calc(45% + 612px) -210px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+@media only screen and(max-width:916px) {
+  body {
+    background-position: calc(30% + 50px);
+  }
+}
+
+@media only screen and(max-width:768px) {
+  body {
+    // background-position:calc();
+    background-position: top;
+    background-image: url(../images/Bitmap5.png);
+  }
+}

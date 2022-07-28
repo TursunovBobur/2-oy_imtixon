@@ -1,0 +1,79 @@
+.simple{
+
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text{
+    max-width: 445px;
+    gap: 95px;
+  }
+
+  &__title{
+    
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+  
+  &__paragraf{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #6C8294;
+  }
+
+
+}
+
+@media only screen and (max-width:972px){
+
+  .simple{
+
+    &__text{
+      max-width: 350px;
+    }
+  }
+}
+
+@media only screen and (max-width:880px){
+
+  .simple{
+
+    &__text{
+      max-width: 545px;
+      text-align: center;
+    }
+
+  }
+
+}
+
+@media only screen and (max-width:525px){
+
+  .simple{
+
+    &__box{
+      margin: 0 auto;
+    }
+
+    
+
+    &__title{
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    
+
+  }
+
+}

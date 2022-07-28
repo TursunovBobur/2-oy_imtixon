@@ -1,0 +1,91 @@
+.implement__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  &-right{
+    max-width: 445px;
+    &-text {
+      font-family: 'DM Serif Display';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+      color: #36536b;
+    }
+
+    &-paragrft {
+      text-align: center;
+      font-family: 'Public Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: #6c8294;
+    }
+  }
+
+}
+@media only screen and (max-width:768px){
+
+  .implement__box{
+    flex-direction: column-reverse;
+    display: block;
+    max-width: 573px;
+    margin: 0 auto;
+    &-right{
+      max-width: 512px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      &-text{
+        font-size: 36px;
+        line-height: 36px;
+        text-align: center;
+      }
+      
+      &-paragraf{
+        text-align: center;
+        text-align: center;
+      }
+      
+    }
+
+    &-left{
+      max-width: 410px;
+      margin-bottom: 48px;
+    }
+  }
+
+}
+
+@media only screen and (max-width:425px){
+
+  .implement__box{
+
+    max-width: 410px;
+
+    &-right{
+      max-width: 280px;
+
+      &-text{
+        font-size: 32px;
+        line-height: 25px;
+        text-align: center;
+      }
+
+      &-paragraf{
+        text-align: center;
+      }
+
+    }
+
+    &-left{
+      max-width: 328px;
+    }
+
+  }
+
+}
